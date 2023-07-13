@@ -1,7 +1,7 @@
-author: jatoms.io
-title: JATOMS
-description: Atomic Building Blocks for Java
-contact_page: https://twitter.com/NewsOsgi
+author: qfast.io
+title: QFast
+description: Quality Comes First
+contact_page: https://twitter.com/qfast-io
 
 # language to use in html tag, can be overriden by page.lang
 # lang: en
@@ -23,12 +23,12 @@ logo: logo.png
 
 # Github data, if present there will be a GitHub button in the navbar
 github_button:
-  user: jatoms-io
-  project: io.jatoms.page
+  user: qfast-io
+  project: qfast-io.github.io
 
 # Twitter data, if present there will be a Twitter button in the navbar
 twitter_button:
-  user: NewsOsgi
+  user: qfast-io
 
 collections:
   landingpage:
