@@ -33,25 +33,29 @@ twitter_button:
 collections:
   landingpage:
     output: true
-  tutorials:
+  products:
     output: true
     news_relevant: true
     news_icon: apps
-    navbar_title: Tutorials
+    navbar_title: Products
     order: 10
-  blog:
+  courses:
+    output: true
+    navbar_title: Courses
+    news_relevant: true
+    news_icon: course
+    order: 20
+  blogs:
     output: true
     news_relevant: true
-    news_icon: chat
-    navbar_title: Blog
-    order: 20
+    news_icon: blog
+    navbar_title: Blogs
+    order: 30
   chat:
     output: true
     navbar_title: Chat
-    order: 30
-  contribute:
-    output: true
-    navbar_title: Contribute
-    news_relevant: true
-    news_icon: people
     order: 40
+  about:
+    output: true
+    navbar_title: About
+    order: 50
