@@ -19,15 +19,19 @@ colors:
     secondaryBackground: grey-lighten-4
 
 # path to logo without leading slash e.g. images/logo.png or just the file name if it is in the root directory
-logo: logo.png
+logo: assets/images/logo.png
 
 # Github data, if present there will be a GitHub button in the navbar
 github_button:
   user: qfast-io
-  project: qfast-io.github.io
+  project: repositories
 
 # Twitter data, if present there will be a Twitter button in the navbar
 twitter_button:
+  user: qfast-io
+
+# Linked data, if present there will be a Linked button in the navbar
+linkedin_button:
   user: qfast-io
 
 collections:

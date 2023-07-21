@@ -1,8 +1,8 @@
 ---
 layout: peptalk
 icon: apps
-title: Jatoms
+title: Odoo Migration
 ---
-Get started quickly with the technology you love!
+With each new version of Odoo, there are significant improvements and changes that can make it challenging to migrate from one version to another. In the past, businesses had to go through the time-consuming and costly process of migrating from one version to the next consecutively. 
 
-Jatoms is an ever growing collection of online executable examples on how to use to create a modular application out of small building blocks.
+However, our product offers a unique solution that allows businesses to migrate directly from version 10 to 15 without the need for consecutive migrations. This approach saves time and money while minimizing disruptions to business operations.
