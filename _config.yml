@@ -20,6 +20,13 @@ colors:
 
 # path to logo without leading slash e.g. images/logo.png or just the file name if it is in the root directory
 logo: assets/images/logo.png
+#banner path
+banner_arch_1: assets/images/banner-arch-1.jpg
+banner_arch_2: assets/images/banner-arch-2.jpg
+banner_arch_3: assets/images/banner-arch-3.jpg
+banner_team_1: assets/images/banner-team-1.jpg
+banner_team_2: assets/images/banner-team-2.jpg
+banner_team_3: assets/images/banner-team-3.jpg
 
 # Github data, if present there will be a GitHub button in the navbar
 github_button:
@@ -37,29 +44,33 @@ linkedin_button:
 collections:
   landingpage:
     output: true
+  projects:
+    output: true
+    navbar_title: Projects
+    order: 10
   products:
     output: true
     news_relevant: true
     news_icon: apps
     navbar_title: Products
-    order: 10
+    order: 20
   courses:
     output: true
     navbar_title: Courses
     news_relevant: true
     news_icon: course
-    order: 20
+    order: 30
   blogs:
     output: true
     news_relevant: true
     news_icon: blog
     navbar_title: Blogs
-    order: 30
+    order: 40
   chat:
     output: true
     navbar_title: Chat
-    order: 40
+    order: 50
   about:
     output: true
     navbar_title: About
-    order: 50
+    order: 60

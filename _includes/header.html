@@ -1,4 +1,4 @@
-<nav class="white lighten-1" role="navigation">
+<nav role="navigation">
 	<div class="nav-wrapper container">
 		<a id="logo-container" class="brand-logo" href="/"><img src="/{{site.logo }}" class="logo"></a>
 	    {% assign navbaritems = site.collections | where_exp: "item", "item.navbar_title" | sort: 'order' %}

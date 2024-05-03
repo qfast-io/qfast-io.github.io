@@ -7,6 +7,9 @@
 {% assign inverseTextColor = site.data.colormapper[site.colors.inverse_text] %}
 {% assign dividerColor = site.data.colormapper[site.colors.divider] %}
 {% assign secondaryBackgroundColor = site.data.colormapper[site.colors.secondaryBackground]%}
+{% assign whiteColor = site.data.colormapper[site.colors.inverse_text] %}
+{% assign bannerImage = site.banner_team_2 %}
+
 a {color: {{primaryLightColor}};fill:{{primaryColor}};}
 a:hover {color: {{accentColor}};fill:{{accentColor}};}
 h1,h2,h3,h4,h5,h6{color: {{primaryColor}};}
@@ -35,3 +38,16 @@ footer h5{color:{{inverseTextColor}};}
 hr{background-color:{{dividerColor}};}
 .divider{background-color:{{dividerColor}};}
 .page-footer{padding-top: 0px;}
+
+body::-webkit-scrollbar {
+    width: 0.4em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: {{secondaryBackgroundColor}};
+  outline: 1px solid {{secondaryTextColor}};
+}

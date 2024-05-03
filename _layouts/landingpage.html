@@ -1,83 +1,108 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
 
-  {%- include head.html -%}
+{%- include head.html -%}
 
-  {%- capture style -%} {%- include base.css -%} {%- include landingpage.css -%} {%- endcapture -%}
+{%- capture style -%} {%- include base.css -%} {%- include landingpage.css -%} {%- endcapture -%}
 
-  <style>
-	{{- style | strip_newlines -}}
-  </style>
+<style>
+  {{- style | strip_newlines -}}
+</style>
 
-  <body>
-	<!-- Navigation Header -->
-	{% include header.html %}
+<body>
+  <div id="body-content">
+    <div class="qheader">
+      <!-- Navigation Header -->
+      {% include header.html %}
 
-	<main>
-	<!-- HeroHeader -->
-	<div id="trianglify-content" class="center-align">
+      <!-- HeroHeader -->
+      <div class="center-align">
         <h1 class="heroheader-title">{{site.title}}</h1>
         <p class="heroheader-subtitle">{{site.description}}</p>
-        <p class="lead">
-            <a id="titlebutton" href="products/index.html" class="waves-effect waves-light btn-large hoverable">Get Started!</a>
-        </p>
-        <p class="heroheader-version">Products list</p>
+        <form action="https://formspree.io/f/mpzvbldy" method="POST">
+          <div class="row" style="width: 40%;">
+            <div class="input-field col s4">
+              <input id="email" type="email" name="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field col s4">
+              <select id="message" name="message" multiple>
+                <option value="" disabled selected>Choose your services</option>
+                <option value="architecture_consulting">Architecture Consulting</option>
+                <option value="software_development">Software Development</option>
+                <option value="odoo">Odoo</option>
+                <option value="devops">DevOps</option>
+              </select>
+              <label for="message">Our Services</label>
+            </div>
+            <div class="col s4">
+              <button class="waves-effect waves-light btn-large hoverable" type="submit" name="action">Request
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <p class="heroheader-version">Need help?</p>
+      </div>
     </div>
 
-	<div class="section container">
-	  <div class="row">
-		{% assign peptalks = site.landingpage | where_exp:"item", "item.layout == 'peptalk'"  %}
-		{% for peptalk in peptalks %}
-		  {{- peptalk.output -}}
-		{% endfor %}
-	  </div>
-	</div>
+    <main>
+      <div class="section container">
+        <div class="row">
+          {% assign peptalks = site.landingpage | where_exp:"item", "item.layout == 'peptalk'" %}
+          {% for peptalk in peptalks %}
+          {{- peptalk.output -}}
+          {% endfor %}
+        </div>
+      </div>
 
 
-   <div class="secondary-background">
-		<div class="container">
-			<h4 class="center-align news-header"> Content Updates </h4>
-             <div class="timeline">
-                {% assign news = '' | split: '' %}
-                {% for collection in site.collections %}
-                    {% if collection.news_relevant %}
-                        <!-- Filter items that don't have a published_at property -->
-                        {% assign items = collection.docs | where_exp:"doc", "doc.published_at" %}
-                        <!-- Filter items that don't have any description property -->
-                        {% assign items = items | where_exp:"item", "item.description" %}
-                        {% assign news = news | concat: items %}
-                    {% endif %}
-                {% endfor %}
+      <div class="secondary-background">
+        <div class="container">
+          <h4 class="center-align news-header"> Content Updates </h4>
+          <div class="timeline">
+            {% assign news = '' | split: '' %}
+            {% for collection in site.collections %}
+            {% if collection.news_relevant %}
+            <!-- Filter items that don't have a published_at property -->
+            {% assign items = collection.docs | where_exp:"doc", "doc.published_at" %}
+            <!-- Filter items that don't have any description property -->
+            {% assign items = items | where_exp:"item", "item.description" %}
+            {% assign news = news | concat: items %}
+            {% endif %}
+            {% endfor %}
 
-                {% assign news = news | sort: "published_at" | reverse %}
-                {% for newsitem in news limit: 5 %}
+            {% assign news = news | sort: "published_at" | reverse %}
+            {% for newsitem in news limit: 5 %}
 
-                    {% assign newsitemcollection = site.collections | where_exp: "item" , "item.label == newsitem.collection" | first %}
-                 <div class="timeline-event">
-                    <a class="newsitem" href="{{newsitem.url}}">
-                        <div class="card timeline-content hoverable">
-                            <div class="card-content">
-                                <!-- Get name of the file as title -->
-                                {% assign url_parts = newsitem.url | split: '/' %}
-                                {% assign newsitem_title = url_parts | last | url_decode | remove: ".html" %}
-                                <span class="card-title activator grey-text text-darken-4">{{newsitem_title}}</span>
-                                <p class="newsitem-date">{{ newsitem.published_at | date: "%B %d, %Y" }}</p>
-                                <p>{{newsitem.description}}</p>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="timeline-badge white-text"><i class="material-icons">{{newsitemcollection.news_icon}}</i></div>
+            {% assign newsitemcollection = site.collections | where_exp: "item" , "item.label == newsitem.collection" |
+            first %}
+            <div class="timeline-event">
+              <a class="newsitem" href="{{newsitem.url}}">
+                <div class="card timeline-content hoverable">
+                  <div class="card-content">
+                    <!-- Get name of the file as title -->
+                    {% assign url_parts = newsitem.url | split: '/' %}
+                    {% assign newsitem_title = url_parts | last | url_decode | remove: ".html" %}
+                    <span class="card-title activator grey-text text-darken-4">{{newsitem_title}}</span>
+                    <p class="newsitem-date">{{ newsitem.published_at | date: "%B %d, %Y" }}</p>
+                    <p>{{newsitem.description}}</p>
+                  </div>
                 </div>
-                {% endfor %}
-		</div>
-	</div>
-  </main>
+              </a>
+              <div class="timeline-badge white-text"><i class="material-icons">{{newsitemcollection.news_icon}}</i></div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+    </main>
 
     {% include footer.html %}
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.1.0/trianglify.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/1.1.0/trianglify.min.js"></script>
     {% include trianglify.html %}
     {% include trianglify-mobile.html %}
+  </div>
+</body>
 
-  </body>
 </html>
