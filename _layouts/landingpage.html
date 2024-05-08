@@ -20,20 +20,19 @@
         <h1 class="heroheader-title">{{site.title}}</h1>
         <p class="heroheader-subtitle">{{site.description}}</p>
         <form action="https://formspree.io/f/mpzvbldy" method="POST">
-          <div class="row" style="width: 40%;">
+          <div class="row" style="width: 50%;">
             <div class="input-field col s4">
               <input id="email" type="email" name="email" class="validate">
               <label for="email">Email</label>
             </div>
             <div class="input-field col s4">
               <select id="message" name="message" multiple>
-                <option value="" disabled selected>Choose your services</option>
+                <option value="" disabled>Choose your services</option>
                 <option value="architecture_consulting">Architecture Consulting</option>
                 <option value="software_development">Software Development</option>
                 <option value="odoo">Odoo</option>
                 <option value="devops">DevOps</option>
               </select>
-              <label for="message">Our Services</label>
             </div>
             <div class="col s4">
               <button class="waves-effect waves-light btn-large hoverable" type="submit" name="action">Request
