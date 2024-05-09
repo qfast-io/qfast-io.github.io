@@ -10,6 +10,30 @@
 {% assign whiteColor = site.data.colormapper[site.colors.inverse_text] %}
 {% assign bannerImage = site.banner_team_2 %}
 
+.btn, .btn-large, .btn-small {
+    background-color: {{accentColor}};
+}
+.dropdown-content li>a, .dropdown-content li>span {
+    color: {{accentColor}};
+}
+[type="checkbox"]:checked+span:not(.lever):before {
+    border-right: 2px solid {{accentColor}};
+    border-bottom: 2px solid {{accentColor}};
+}
+.select-wrapper input.select-dropdown:focus {
+    border-bottom: 1px solid  {{accentColor}};
+}
+.btn:hover, .btn-large:hover, .btn-small:hover{
+    background-color: {{accentColor}};
+}
+.btn:focus, .btn-large:focus, .btn-small:focus, .btn-floating:focus{
+    background-color: {{accentColor}};
+}
+input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):focus:not([readonly]), input[type=password]:not(.browser-default):focus:not([readonly]), input[type=email]:not(.browser-default):focus:not([readonly]), input[type=url]:not(.browser-default):focus:not([readonly]), input[type=time]:not(.browser-default):focus:not([readonly]), input[type=date]:not(.browser-default):focus:not([readonly]), input[type=datetime]:not(.browser-default):focus:not([readonly]), input[type=datetime-local]:not(.browser-default):focus:not([readonly]), input[type=tel]:not(.browser-default):focus:not([readonly]), input[type=number]:not(.browser-default):focus:not([readonly]), input[type=search]:not(.browser-default):focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid {{accentColor}};
+    -webkit-box-shadow: 0 1px 0 0 {{accentColor}};
+    box-shadow: 0 1px 0 0 {{accentColor}};
+}
 a {color: {{primaryLightColor}};fill:{{primaryColor}};}
 a:hover {color: {{accentColor}};fill:{{accentColor}};}
 h1,h2,h3,h4,h5,h6{color: {{primaryColor}};}
