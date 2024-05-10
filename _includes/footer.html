@@ -1,15 +1,36 @@
 <footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <h6>Contact Information</h6>
+                <p>Phone: 123-456-7890</p>
+                <p>Email: info@example.com</p>
+                <p>Address: 123 Main Street, City, Country</p>
+            </div>
+            <div class="col s12 m6">
+                <h6>Connect with Us</h6>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-github small"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fab fa-linkedin small"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fab fa-youtube small"></i></a>
+                </div>
+            </div>
+            <div class="col s12">
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="footer-copyright">
         <div class="container">
             <div class="row">
-                <div class="col s4 left-align">
-                Made with <a href="http://materializecss.com">Materialize</a>
-                </div>
-                <div class="col s4 center-align">
-                Copyright © 2019 <a href="{{site.contact_page}}">{{site.author}}</a>
-                </div>
-                <div class="col s4 right-align">
-                Powered by <a target="_blank" href="http://jekyllrb.com/">Jekyll</a>
+                <div class="col s12">
+                    <p class="text-small">© 2024 Your Architect Website. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -20,12 +41,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <!-- Code used to initiate the Navbar for mobile devices and select-->
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems);
     });
 
-    $(document).ready(function(){
+    $(document).ready(function () {
         $('select').formSelect();
     });
 </script>
