@@ -12,6 +12,8 @@ colors:
     primary_light: grey-darken-1
     primary: grey-darken-3
     accent: light-blue
+    accent_dark_1: light-blue-darken-1
+    accent_dark_2: light-blue-darken-2
     primary_text: grey-darken-4
     secondary_text: grey-darken-1
     inverse_text: white
@@ -34,7 +36,7 @@ github_button:
   project: repositories
 
 # Twitter data, if present there will be a Twitter button in the navbar
-twitter_button:
+youtube_button:
   user: qfast-io
 
 # Linked data, if present there will be a Linked button in the navbar
@@ -44,19 +46,19 @@ linkedin_button:
 collections:
   landingpage:
     output: true
-  projects:
+  portfolio:
     output: true
-    navbar_title: Projects
+    navbar_title: Portfolio
     order: 10
-  products:
+  # products:
+  #   output: true
+  #   news_relevant: true
+  #   news_icon: apps
+  #   navbar_title: Products
+  #   order: 20
+  videos:
     output: true
-    news_relevant: true
-    news_icon: apps
-    navbar_title: Products
-    order: 20
-  courses:
-    output: true
-    navbar_title: Courses
+    navbar_title: Videos
     news_relevant: true
     news_icon: course
     order: 30
@@ -66,10 +68,10 @@ collections:
     news_icon: blog
     navbar_title: Blogs
     order: 40
-  chat:
-    output: true
-    navbar_title: Chat
-    order: 50
+  # chat:
+  #   output: true
+  #   navbar_title: Chat
+  #   order: 50
   about:
     output: true
     navbar_title: About

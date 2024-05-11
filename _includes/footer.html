@@ -1,15 +1,77 @@
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large light-blue">
+        <i class="fas fa-id-card"></i>
+    </a>
+    <ul>
+        <li>
+            <a title="Send Email" class="btn-floating red" href="mailto:amawaziny@gmail.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </li>
+        <li>
+            <a title="Call Us" class="btn-floating blue darken-1" href="tel:+020 100 300 9331">
+                <i class="fas fa-phone"></i>
+            </a>
+        </li>
+        <li>
+            <a title="Meet Now" class="btn-floating green">
+                <i class="fas fa-calendar"></i>
+            </a>
+        </li>
+        <li>
+            <a title="Whatsapp" href="https://wa.me/+0201003009331" class="btn-floating whatsapp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
 <footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <h6>Contact Information</h6>
+                <p>Phone: <a href="tel:+020 100 300 9331">+020 100 300 9331</a></p>
+                <p>Email: <a href="mailto:amawaziny@gmail.com">amawaziny@gmail.com</a></p>
+                <p>Address: <a href="https://www.google.com/maps/search/Zahra El Maadi, Cairo, Egypt">Zahra El Maadi, Cairo, Egypt</a></p>
+            </div>
+            <div class="col s12 m6">
+                <h6>Follow Us</h6>
+                <div class="social-icons">
+                    {% if site.github_button %}
+                        <a title="{{site.github_button.user}} on GitHub" target="_blank" href="{{ "https://github.com/orgs/" | append: site.github_button.user | append: "/repositories" }}">
+                            <i class="fab fa-github smaller"></i>
+                        </a>
+                    {% endif %}
+
+                    {% if site.youtube_button %}
+                        <a title="{{site.youtube_button.user}} on Youtube" target="_blank" href="{{ "https://youtube.com/" | append: site.twitter_button.user }}">
+                            <i class="fab fa-youtube smaller"></i>
+                        </a>
+                    {% endif %}
+
+                    {% if site.linkedin_button %}
+                        <a title="{{site.linkedin_button.user}} on Linkedin" target="_blank" href="{{ "https://linkedin.com/in/" | append: site.linkedin_button.user }}">
+                            <i class="fab fa-linkedin smaller"></i>
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="col s12">
+                <ul class="footer-links">
+                    <li><a href="/">Home</a></li>
+                    {% for navbaritem in navbaritems %}
+			            <li><a href="/{{navbaritem.label}}/index.html">{{navbaritem.navbar_title}}</a></li>
+		            {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="footer-copyright">
         <div class="container">
             <div class="row">
-                <div class="col s4 left-align">
-                Made with <a href="http://materializecss.com">Materialize</a>
-                </div>
-                <div class="col s4 center-align">
-                Copyright © 2019 <a href="{{site.contact_page}}">{{site.author}}</a>
-                </div>
-                <div class="col s4 right-align">
-                Powered by <a target="_blank" href="http://jekyllrb.com/">Jekyll</a>
+                <div class="col s12">
+                    <p class="text-small">© 2024 {{site.title}}. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -20,12 +82,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <!-- Code used to initiate the Navbar for mobile devices and select-->
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems);
     });
 
-    $(document).ready(function(){
+    $(document).ready(function () {
         $('select').formSelect();
     });
+
+    $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
 </script>

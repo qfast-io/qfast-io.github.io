@@ -5,9 +5,9 @@
 a.newsitem:hover {color:{{primaryLightColor}};}
 
 /* Heroheader */
-.heroheader-title{color:{{inverseTextColor}};padding-top:60px;margin:0px;font-size:50px;}
+.heroheader-title{color:{{inverseTextColor}};padding-top:130px;margin:0px;font-size:50px;}
 .heroheader-subtitle{color:{{inverseTextColor}};font-size:30px;margin-top:0px;}
-.heroheader-version{color:{{inverseTextColor}};padding-bottom:60px;margin:0px;font-size:14px;}
+.heroheader-version{color:{{inverseTextColor}};padding-bottom:215px;margin:0px;font-size:14px;}
 #titlebutton{background-color:{{accentColor}};}
 a:hover#titlebutton{color:{{inverseTextColor}};}
 #trianglify-content{background:linear-gradient(135deg, {{primaryDarkColor}}, {{primaryLightColor}});}
@@ -62,4 +62,44 @@ nav ul a {
 
 .lead{
   width: 40%;
+}
+
+.qheader input[type=email]:not(.browser-default),
+.qheader .select-wrapper input.select-dropdown  {
+  background-color: {{whiteColor}};
+  padding-left: 10px
+}
+
+.qheader .input-field.col label {
+  left: 1.5em;
+}
+
+.qheader .caret {
+  z-index: 1;
+}
+
+.qheader .btn-large {
+  height: 3em;
+  line-height: 3em;
+  margin-top: 14px;
+}
+
+.qheader .input-field>label:not(.label-icon).active, 
+.qheader .input-field>input[type]:-webkit-autofill:not(.browser-default):not([type="search"])+label,
+.qheader input[type=email]:not(.browser-default):focus.valid ~ label,
+.qheader input[type=email]:not(.browser-default):focus:not([readonly])+label{
+  transform: translateY(-20px) scale(0.8);
+  left: 0.75em;
+  color: {{whiteColor}};
+}
+
+.qheader .contact{
+  padding: 10px 0px;
+  background-color: rgb(245 231 231 / 34%);
+  border-radius: 5px 0px 0px 0px;
+}
+
+.qheader .contact a{
+  color: {{primaryDarkColor}};
+  margin: 10px
 }
