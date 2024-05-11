@@ -1,14 +1,26 @@
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large black">
+        <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+        <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+        <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+        <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+</div>
+
 <footer class="page-footer">
     <div class="container">
         <div class="row">
             <div class="col s12 m6">
                 <h6>Contact Information</h6>
-                <p>Phone: 123-456-7890</p>
-                <p>Email: info@example.com</p>
-                <p>Address: 123 Main Street, City, Country</p>
+                <p>Phone: <a href="tel:+020 100 300 9331">+020 100 300 9331</a></p>
+                <p>Email: <a href="mailto:amawaziny@gmail.com">amawaziny@gmail.com</a></p>
+                <p>Address: <a href="https://www.google.com/maps/search/Zahra El Maadi, Cairo, Egypt">Zahra El Maadi, Cairo, Egypt</a></p>
             </div>
             <div class="col s12 m6">
-                <h6>Connect with Us</h6>
+                <h6>Follow Us</h6>
                 <div class="social-icons">
                     {% if site.github_button %}
                         <a title="{{site.github_button.user}} on GitHub" target="_blank" href="{{ "https://github.com/orgs/" | append: site.github_button.user | append: "/repositories" }}">
@@ -31,7 +43,7 @@
             </div>
             <div class="col s12">
                 <ul class="footer-links">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     {% for navbaritem in navbaritems %}
 			            <li><a href="/{{navbaritem.label}}/index.html">{{navbaritem.navbar_title}}</a></li>
 		            {% endfor %}
@@ -62,4 +74,8 @@
     $(document).ready(function () {
         $('select').formSelect();
     });
+
+    $(document).ready(function(){
+    $('.fixed-action-btn').floatingActionButton();
+  });
 </script>

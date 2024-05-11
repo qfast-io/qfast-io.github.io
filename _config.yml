@@ -12,6 +12,8 @@ colors:
     primary_light: grey-darken-1
     primary: grey-darken-3
     accent: light-blue
+    accent_dark_1: light-blue-darken-1
+    accent_dark_2: light-blue-darken-2
     primary_text: grey-darken-4
     secondary_text: grey-darken-1
     inverse_text: white
