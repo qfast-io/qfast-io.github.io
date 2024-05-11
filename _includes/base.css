@@ -75,3 +75,19 @@ body::-webkit-scrollbar-thumb {
   background-color: {{secondaryBackgroundColor}};
   outline: 1px solid {{secondaryTextColor}};
 }
+
+.page-footer a {
+    color: {{whiteColor}}
+}
+
+.page-footer a:hover {
+    color: {{primaryDarkColor}}
+}
+
+i.smaller{
+    font-size: 1.6em;
+}
+
+.social-icons a{
+    margin-right: 18px;
+}
