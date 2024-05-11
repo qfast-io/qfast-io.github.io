@@ -90,7 +90,9 @@ body::-webkit-scrollbar-thumb {
     color: {{whiteColor}};
     font-weight: 500;
 }
-
+.page-footer .footer-copyright{
+    background-color: rgb(51 51 51 / 69%);
+}
 
 i.smaller{
     font-size: 1.6em;
@@ -99,4 +101,12 @@ i.smaller{
 .social-icons a{
     margin-right: 18px;
     text-decoration: none;
+}
+
+.whatsapp{
+    background-color: #25d366;
+}
+
+.btn-floating i {
+    font-size: 1.3em;
 }
