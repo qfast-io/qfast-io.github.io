@@ -2,6 +2,7 @@ author: qfast.io
 title: QFast
 description: Quality Comes First
 contact_page: https://twitter.com/qfast-io
+sitemap: /sitemap.xml
 
 # language to use in html tag, can be overriden by page.lang
 # lang: en
