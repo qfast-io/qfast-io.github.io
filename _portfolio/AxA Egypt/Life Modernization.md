@@ -3,7 +3,7 @@ layout: content
 description: The AxA Life Modernization project aimed to address performance issues and limitations in a legacy desktop system written in VB.net with database access to Oracle...
 author: Mawaziny
 published_at: 2022-11-01
-order: 1
+order: 2
 ---
 The AxA Life Modernization project aimed to address performance issues and limitations in a legacy desktop system written in VB.net with database access to Oracle. The system frequently experienced performance problems, particularly during end-of-day and end-of-month processes, leading to system blockages. To overcome these challenges, the project adopted a modernization approach that leveraged various technologies and architectural patterns.
 

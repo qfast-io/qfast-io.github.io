@@ -3,7 +3,7 @@ layout: content
 description: The Payment Gateway project is a system developed for AXA Egypt. It consists of four microservices, Payment Aggregator, Paymob Integration Adaptor, Fawry Integration Adaptor...
 author: Mawaziny
 published_at: 2022-11-01
-order: 2
+order: 3
 ---
 The Payment Gateway project is a system developed for AXA Egypt. It consists of four microservices: Payment Aggregator, Paymob Integration Adaptor, Fawry Integration Adaptor, and File Processor. The system facilitates payment processing by integrating with external payment providers and handling recurring payments based on policy payment installments.
 
