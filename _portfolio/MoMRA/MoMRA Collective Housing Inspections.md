@@ -1,6 +1,6 @@
 ---
 layout: content
-description:The MoMRA Inspection project aims to streamline the process of inspecting workers' housing by generating visits, scheduling them, and assigning them to inspectors
+description: The MoMRA Inspection project aims to streamline the process of inspecting workers' housing by generating visits, scheduling them, and assigning them to inspectors
 author: Mawaziny
 published_at: 2021-08-01
 order: 2
