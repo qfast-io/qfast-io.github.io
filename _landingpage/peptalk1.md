@@ -1,8 +1,8 @@
 ---
 layout: peptalk
 icon: apps
-title: Odoo Migration
+title: Architecture Consulting and Enterprise Architecture
 ---
-With each new version of Odoo, there are significant improvements and changes that can make it challenging to migrate from one version to another. In the past, businesses had to go through the time-consuming and costly process of migrating from one version to the next consecutively. 
+With over 15+ years of combined experience in software development and architecture, we offer comprehensive architecture consulting solutions. We help businesses design and implement efficient and scalable architectures that align with their unique requirements. Whether it's defining architectural principles, creating system blueprints, or optimizing existing architectures, our expertise ensures that businesses have a solid foundation for their digital transformation. 
 
-However, our product offers a unique solution that allows businesses to migrate directly from version 10 to 15 without the need for consecutive migrations. This approach saves time and money while minimizing disruptions to business operations.
+Additionally, our enterprise architecture services provide a holistic view of the organization's IT landscape, enabling effective decision-making and alignment with business goals. We leverage our knowledge of different cloud solutions to guide businesses in selecting and implementing the right architecture for their needs.

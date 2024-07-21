@@ -103,3 +103,9 @@ nav ul a {
   color: {{primaryDarkColor}};
   margin: 10px
 }
+
+@media only screen and (min-width: 993px) {
+  .cservices {
+      width: 90%;
+  }
+}
